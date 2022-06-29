@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!-- El default es pq si no habia ninguna pagina anterior no se mostraria el -->
+      <!-- boton pq no tiene a donde redirigir. -->
+      <ion-back-button
+        defaultHref="/home"
+        text="Go back"
+        color="primary"
+        mode="ios"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-capitalize">{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>

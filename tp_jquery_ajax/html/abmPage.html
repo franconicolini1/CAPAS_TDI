@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../includes/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/abmPage.css" />
+    <script
+      src="https://kit.fontawesome.com/56eefb6e22.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nicolini</title>
+  </head>
+  <body>
+    <div class="overlay-container">
+      <img class="overlay-img" src="" alt="overlay img" />
+      <i class="glyphicon glyphicon-plus overlay-icon"></i>
+    </div>
+    <header class="header">
+      <nav class="header-nav">
+        <i class="glyphicon glyphicon-align-justify header-nav-icon"></i>
+        <div class="header-nav-container">
+          <img
+            src="../img/user.jpeg"
+            alt="User image"
+            class="header-nav-container-img expand-img"
+          />
+          <p class="user-name">Alexander Pierce</p>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <div class="row">
+        <aside class="col-xs-3 col-sm-2 aside">
+          <div class="row">
+            <div class="col-xs aside-container">
+              <img
+                src="../img/user.jpeg"
+                alt="User image"
+                class="aside-container-img expand-img"
+              />
+              <div class="aside-user-data-container">
+                <p class="user-name aside-user-data-container-text">
+                  Alexander Pierce
+                </p>
+                <p class="aside-user-data-container-status">Online</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <form class="form-group aside-form">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="search"
+                  class="form-control aside-form-input"
+                  placeholder="Search..."
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text"
+                    ><i class="glyphicon glyphicon-search search-icon"></i
+                  ></span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="aside-menu-container">
+            <ul class="aside-menu">
+              <a href="profile.html"
+                ><li class="aside-menu-item">Dashboard</li></a
+              >
+              <a href="users.html"><li class="aside-menu-item">Usuarios</li></a>
+              <a href="paginator.html"
+                ><li class="aside-menu-item">Paginator</li></a
+              >
+              <a href="abmPage.html"
+                ><li class="aside-menu-item">ABM Page</li></a
+              >
+              <a href="index.html"><li class="aside-menu-item">Logout</li></a>
+            </ul>
+          </div>
+        </aside>
+        <div class="col-xs-9 col-sm-10 boxes-container">
+          <div class="form-container">
+            <form class="box-form">
+              <div class="form-first-col">
+                <div class="field-container">
+                  <label for="firstName">Nombre</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="field-container">
+                  <label for="email">Correo Electrónico</label>
+                  <input
+                    type="email"
+                    name="name"
+                    id="email"
+                    autocomplete="off"
+                  />
+                </div>
+                <label for="observations">Observaciones</label>
+                <textarea name="observations" id="observations"></textarea>
+              </div>
+              <div class="form-second-col">
+                <div class="field-container">
+                  <label for="secondName">Apellido</label>
+                  <input
+                    type="text"
+                    name="secondName"
+                    id="secondName"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="field-container">
+                  <label>Propuesta</label>
+                  <div class="proposals-container">
+                    <div class="checkbox-container">
+                      <input type="checkbox" id="checkbox1" />
+                      <label for="checbox1">propuesta 1</label>
+                    </div>
+                    <div class="checkbox-container">
+                      <input type="checkbox" id="checkbox2" />
+                      <label for="checbox2">propuesta 2</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="field-container">
+                  <label>Urgencia</label>
+                  <div class="radio-container">
+                    <div class="radio-label-container">
+                      <input type="radio" name="radio1" id="radioInput1" />
+                      <label for="radio1">No urgente</label>
+                    </div>
+                    <div class="radio-label-container">
+                      <input type="radio" name="radio1" id="radioInput2" />
+                      <label for="radio1">Urgente</label>
+                    </div>
+                    <div class="radio-label-container">
+                      <input type="radio" name="radio1" id="radioInput3" />
+                      <label for="radio1">Muy Urgente</label>
+                    </div>
+                    <div class="radio-label-container">
+                      <input type="radio" name="radio1" id="radioInput4" />
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Otro"
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="notebook-container">
+            <div class="notebook-container-black-box"></div>
+            <p class="notebook-text"></p>
+            <p class="notebook-text"></p>
+            <p class="notebook-text"></p>
+            <p class="notebook-text"></p>
+            <p class="notebook-text"></p>
+            <p class="notebook-text notebook-text-last"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../includes/jquery/jquery.js"></script>
+    <script src="../includes/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/abmPage.js"></script>
+  </body>
+</html>

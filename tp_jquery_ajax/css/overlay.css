@@ -1,0 +1,49 @@
+body {
+  overflow: hidden;
+}
+
+.overlay-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.card-img-overlay {
+  display: none;
+  width: 400px;
+  height: 250px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.quit-icon {
+  display: none;
+  cursor: pointer;
+  color: red;
+  font-size: 18px;
+  z-index: 1000000;
+  transform: translateY(-135px) rotate(45deg);
+}
+
+.center {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.center-icon {
+  transform: translate(370px, -120px) rotate(45deg);
+}

@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>{{ titulo }}</h1>
+    </div>
+    <hr />
+    <app-formulario (personaCreada)="agregarPersona($event)"></app-formulario>
+  </div>
+</div>
+
+<!-- Asi se pasa parametros a un componente -->
+<app-persona
+  *ngFor="let persona of personas; let i = index"
+  [persona]="persona"
+  [i]="i"
+></app-persona>
+
+<!-- PIPES, se pone numero | pipeAUsar y en este caso la moneda, simbolo a usar, por lo menos 1 decimal y entre 2-3 decimales -->
+<!-- Otro puede ser el DATE o percent -->
+<div>{{ presupuestoTotal | currency: "MNX":"$":"1.2-3" }}</div>
+
+<!-- NGCLASS, Se aplicara bordeRojo si error === true, en caso contrario no se aplicara nada y quedaran los estilos anteriores -->
+<input type="text" [ngClass]="{ bordeRojo: error === true }" />
+
+<!-- En formmularios 
+<form (ngSubmit)="f.form.valid && agregarValor()" #f="ngForm"></form> -->
+
+<!-- Routing, Se mostrara el componente que corresponda a la url -->
+<router-outlet></router-outlet>
+
+<!-- Router link, se pasa la direccion donde redigira y un parametro
+     es como hacer /personas/:id -->
+<!-- <a [routerLink]="['/personas', indice]
+      [queryParams]="{nombreParametro: 'valorParametro'}"></a> -->

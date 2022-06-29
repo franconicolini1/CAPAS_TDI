@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <ul>
+          <li><a href="#">Logout</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">ABM page</a></li>
+        </ul>
+      </div>
+      <div class="main-panel">
+        <form action="mailto:franconicolini111@gmail.com">
+          <p><input type="text" required /></p>
+          <p>
+            <select name="select" id="select" required>
+              <option value="option1" selected>1</option>
+              <option value="option2">2</option>
+              <option value="option3">3</option>
+            </select>
+          </p>
+          <p><input type="checkbox" /> Checkbox 1</p>
+          <p><input type="checkbox" /> Checkbox 2</p>
+          <p>
+            <input type="radio" value="radio1" name="radio_input1" /> Radio 1
+          </p>
+          <p>
+            <input type="radio" value="radio1" name="radio_input1" /> Radio 2
+          </p>
+          <button type="reset">Limpiar</button>
+          <input type="submit" value="Guardar" />
+        </form>
+      </div>
+      <div class="list-table">
+        <table border>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Fecha de inscripci&oacute;n</th>
+              <th>Precio</th>
+              <th>Acci&oacute;n</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="right">1</td>
+              <td>Juan</td>
+              <td align="center">09/07/2018</td>
+              <td align="right">$120</td>
+              <td><button>Editar</button></td>
+            </tr>
+            <tr>
+              <td align="right">2</td>
+              <td>Paco</td>
+              <td align="center">10/08/2019</td>
+              <td align="right">$121</td>
+              <td><button>Editar</button></td>
+            </tr>
+            <tr>
+              <td align="right">3</td>
+              <td>Pedro</td>
+              <td align="center">11/09/2020</td>
+              <td align="right">$122</td>
+              <td><button>Editar</button></td>
+            </tr>
+            <tr>
+              <td align="right">4</td>
+              <td>De La Mar</td>
+              <td align="center">12/10/2021</td>
+              <td align="right">$123</td>
+              <td><button>Editar</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

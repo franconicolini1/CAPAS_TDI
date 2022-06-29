@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../includes/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/news.css" />
+    <link rel="stylesheet" href="../css/overlay.css" />
+    <script
+      src="https://kit.fontawesome.com/56eefb6e22.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nicolini</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <i class="glyphicon glyphicon-align-justify header-nav-icon"></i>
+        <div class="header-nav-container">
+          <img
+            src="../img/user.jpeg"
+            alt="User image"
+            class="header-nav-container-img card-img card-img-nav"
+          />
+          <img
+            src="../img/user.jpeg"
+            alt="User image"
+            class="header-nav-container-img card-img-overlay"
+          />
+          <i class="glyphicon glyphicon-plus quit-icon"></i>
+          <p class="user-name">Alexander Pierce</p>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <div class="row">
+        <aside class="col-xs-3 col-sm-2 aside">
+          <div class="row">
+            <div class="col-xs aside-container">
+              <img
+                src="../img/user.jpeg"
+                alt="User image"
+                class="aside-container-img card-img card-img-aside"
+              />
+              <img
+                src="../img/user.jpeg"
+                alt="User image"
+                class="header-nav-container-img card-img-overlay"
+              />
+              <i class="glyphicon glyphicon-plus quit-icon"></i>
+              <div class="aside-user-data-container">
+                <p class="user-name aside-user-data-container-text">
+                  Alexander Pierce
+                </p>
+                <p class="aside-user-data-container-status">Online</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <form class="form-group aside-form">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="search"
+                  class="form-control aside-form-input"
+                  placeholder="Search..."
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text"
+                    ><i class="glyphicon glyphicon-search search-icon"></i
+                  ></span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="aside-menu-container">
+            <ul class="aside-menu">
+              <a href="profile.html"
+                ><li class="aside-menu-item">Dashboard</li></a
+              >
+              <a href="users.html"><li class="aside-menu-item">Usuarios</li></a>
+              <a href="paginator.html"
+                ><li class="aside-menu-item">Paginator</li></a
+              >
+              <a href="abmPage.html"
+                ><li class="aside-menu-item">ABM Page</li></a
+              >
+              <a href="index.html"><li class="aside-menu-item">Logout</li></a>
+            </ul>
+          </div>
+        </aside>
+        <div class="col-sm-10 tabs-container-container">
+          <div class="tabs-container">
+            <ul class="nav nav-tabs tabs-container-menu">
+              <li class="nav-item">
+                <a
+                  class="nav-link active upper tabs-container-title"
+                  aria-current="page"
+                  href="profile.html"
+                  >Perfil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link upper tabs-container-title"
+                  href="information.html"
+                  >Informaci&oacute;n</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link upper tabs-container-title" href="news.html"
+                  >Noticias</a
+                >
+              </li>
+            </ul>
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link accordion-card-link"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                      amet
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse collapsed"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <img
+                      class="card-img card-img-collapse"
+                      src="../img/bruceLeeNews.jpg"
+                      alt="Bruce Lee black and white"
+                    />
+                    <img
+                      class="card-img-overlay"
+                      src="../img/bruceLeeNews.jpg"
+                      alt="Bruce Lee black and white"
+                    />
+                    <i class="glyphicon glyphicon-plus quit-icon"></i>
+                    <div class="card-text-container">
+                      <p class="card-title">Neque porro quisquam</p>
+                      <p class="card-text">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        wolf moon tempor, sunt aliqua put a bird on it squid
+                        single-origin coffee nulla assumenda shoreditch et.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft
+                        beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore
+                        sustainable VHS.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link accordion-card-link collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                      amet
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <img
+                      class="card-img card-img-collapse"
+                      src="../img/bruceLeeNews.jpg"
+                      alt="Bruce Lee black and white"
+                    />
+                    <img
+                      class="card-img-overlay"
+                      src="../img/bruceLeeNews.jpg"
+                      alt="Bruce Lee black and white"
+                    />
+                    <i class="glyphicon glyphicon-plus quit-icon"></i>
+                    <div class="card-text-container">
+                      <p class="card-title">Neque porro quisquam</p>
+                      <p class="card-text">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        wolf moon tempor, sunt aliqua put a bird on it squid
+                        single-origin coffee nulla assumenda shoreditch et.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft
+                        beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore
+                        sustainable VHS.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0 card-header-title">
+                    <button
+                      class="btn btn-link accordion-card-link"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="true"
+                      aria-controls="collapseThree"
+                    >
+                      Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                      amet
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseThree"
+                  class="collapse collapsed"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <img
+                      class="card-img card-img-collapse"
+                      src="../img/bruceLeeNews.jpg"
+                      alt="Bruce Lee black and white"
+                    />
+                    <img
+                      class="card-img-overlay"
+                      src="../img/bruceLeeNews.jpg"
+                      alt="Bruce Lee black and white"
+                    />
+                    <i class="glyphicon glyphicon-plus quit-icon"></i>
+                    <div class="card-text-container">
+                      <p class="card-title">Neque porro quisquam</p>
+                      <p class="card-text">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        wolf moon tempor, sunt aliqua put a bird on it squid
+                        single-origin coffee nulla assumenda shoreditch et.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft
+                        beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore
+                        sustainable VHS.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link accordion-card-link"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseFour"
+                      aria-expanded="true"
+                      aria-controls="collapseFour"
+                    >
+                      Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                      amet
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapseFour"
+                  class="collapse collapsed"
+                  aria-labelledby="headingFour"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <img
+                      class="card-img card-img-collapse"
+                      src="../img/bruceLeeNews.jpg"
+                      alt="Bruce Lee black and white"
+                    />
+                    <img
+                      class="card-img-overlay"
+                      src="../img/bruceLeeNews.jpg"
+                      alt="Bruce Lee black and white"
+                    />
+                    <i class="glyphicon glyphicon-plus quit-icon"></i>
+                    <div class="card-text-container">
+                      <p class="card-title">Neque porro quisquam</p>
+                      <p class="card-text">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        wolf moon tempor, sunt aliqua put a bird on it squid
+                        single-origin coffee nulla assumenda shoreditch et.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft
+                        beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore
+                        sustainable VHS.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link accordion-card-link collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                      amet
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseFive"
+                  class="collapse"
+                  aria-labelledby="headingFive"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <img
+                      class="card-img card-img-collapse"
+                      src="../img/bruceLeeNews.jpg"
+                      alt="Bruce Lee black and white"
+                    />
+                    <img
+                      class="card-img-overlay"
+                      src="../img/bruceLeeNews.jpg"
+                      alt="Bruce Lee black and white"
+                    />
+                    <i class="glyphicon glyphicon-plus quit-icon"></i>
+                    <div class="card-text-container">
+                      <p class="card-title">Neque porro quisquam</p>
+                      <p class="card-text">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        wolf moon tempor, sunt aliqua put a bird on it squid
+                        single-origin coffee nulla assumenda shoreditch et.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan
+                        excepteur butcher vice lomo. Leggings occaecat craft
+                        beer farm-to-table, raw denim aesthetic synth nesciunt
+                        you probably haven't heard of them accusamus labore
+                        sustainable VHS.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script src="../includes/jquery/jquery.js"></script>
+  <script src="../includes/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../js/news.js"></script>
+  <script src="../js/overlay.js"></script>
+</html>

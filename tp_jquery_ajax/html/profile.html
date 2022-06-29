@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../includes/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="stylesheet" href="../css/overlay.css" />
+    <script
+      src="https://kit.fontawesome.com/56eefb6e22.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nicolini</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <i class="glyphicon glyphicon-align-justify header-nav-icon"></i>
+        <div class="header-nav-container">
+          <img
+            src="../img/user.jpeg"
+            alt="User image"
+            class="header-nav-container-img card-img card-img-nav"
+          />
+          <img
+            src="../img/user.jpeg"
+            alt="User image"
+            class="header-nav-container-img card-img-overlay"
+          />
+          <i class="glyphicon glyphicon-plus quit-icon"></i>
+          <p class="user-name">Alexander Pierce</p>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <div class="row">
+        <aside class="col-xs-3 col-sm-2 aside">
+          <div class="row">
+            <div class="col-xs aside-container">
+              <img
+                src="../img/user.jpeg"
+                alt="User image"
+                class="aside-container-img card-img card-img-aside"
+              />
+              <img
+                src="../img/user.jpeg"
+                alt="User image"
+                class="header-nav-container-img card-img-overlay"
+              />
+              <i class="glyphicon glyphicon-plus quit-icon"></i>
+              <div class="aside-user-data-container">
+                <p class="user-name aside-user-data-container-text">
+                  Alexander Pierce
+                </p>
+                <p class="aside-user-data-container-status">Online</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <form class="form-group aside-form">
+              <div class="input-group">
+                <input
+                  autocomplete="no"
+                  type="text"
+                  name="search"
+                  class="form-control aside-form-input"
+                  placeholder="Search..."
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text"
+                    ><i class="glyphicon glyphicon-search search-icon"></i
+                  ></span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="aside-menu-container">
+            <ul class="aside-menu">
+              <a href="profile.html"
+                ><li class="aside-menu-item">Dashboard</li></a
+              >
+              <a href="users.html"><li class="aside-menu-item">Usuarios</li></a>
+              <a href="paginator.html"
+                ><li class="aside-menu-item">Paginator</li></a
+              >
+              <a href="abmPage.html"
+                ><li class="aside-menu-item">ABM Page</li></a
+              >
+              <a href="index.html"><li class="aside-menu-item">Logout</li></a>
+            </ul>
+          </div>
+        </aside>
+        <div class="col-xs-9 col-sm-10 tabs-container-container">
+          <div class="tabs-container">
+            <ul class="nav nav-tabs tabs-container-menu">
+              <li class="nav-item">
+                <a
+                  class="nav-link active upper tabs-container-title"
+                  aria-current="page"
+                  href="profile.html"
+                  >Perfil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link upper tabs-container-title"
+                  href="information.html"
+                  >Informaci&oacute;n</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link upper tabs-container-title" href="news.html"
+                  >Noticias</a
+                >
+              </li>
+            </ul>
+
+            <div class="profile-container container-fluid">
+              <div class="profile-container-img-container">
+                <img
+                  src="../img/bruceLee.jpeg"
+                  alt="Bruce Lee"
+                  class="profile-container-img-container-img card-img card-img-profile"
+                />
+                <img
+                  src="../img/bruceLee.jpeg"
+                  alt="Bruce Lee"
+                  class="card-img-overlay"
+                />
+                <i class="glyphicon glyphicon-plus quit-icon"></i>
+              </div>
+              <div class="profile-container-information">
+                <h1 class="profile-container-title">Información Básica</h1>
+                <form class="profile-form form-group">
+                  <div class="profile-form-input-container">
+                    <input
+                      autocomplete="off"
+                      class="form-control profile-name"
+                      type="text"
+                      placeholder="Bruce Lee"
+                      name="profile-name"
+                      required
+                    />
+                    <i class=""></i>
+                  </div>
+                  <div class="profile-form-input-container">
+                    <input
+                      autocomplete="off"
+                      class="form-control profile-social"
+                      type="text"
+                      placeholder="Social Media Guru"
+                      name="profile-social"
+                      required
+                    />
+                    <i class=""></i>
+                  </div>
+                  <div class="profile-form-input-container">
+                    <input
+                      autocomplete="off"
+                      class="form-control profile-date"
+                      type="date"
+                      name="profile-date"
+                      placeholder="15/02/1975"
+                      min="1900-01-01"
+                      max="2022-06-01"
+                      required
+                    />
+                    <i class=""></i>
+                  </div>
+                  <div class="profile-form-input-container">
+                    <input
+                      autocomplete="off"
+                      class="form-control profile-country"
+                      type="text"
+                      name="profile-country"
+                      placeholder="Argentina"
+                      required
+                    />
+                    <i class=""></i>
+                  </div>
+                  <div class="profile-form-input-container">
+                    <select
+                      name="profile-select"
+                      class="form-control profile-select"
+                    >
+                      <option value="Seleccionar" selected disabled>
+                        Seleccionar
+                      </option>
+                      <option value="Cordoba">Córdoba</option>
+                      <option value="Buenos Aires">Buenos Aires</option>
+                      <option value="Misiones">Misiones</option>
+                    </select>
+                    <i class=""></i>
+                  </div>
+                  <div class="radio-container">
+                    <input
+                      class="profile-form-radio"
+                      type="radio"
+                      name="profile-radio"
+                      id="profile-radio-male"
+                      checked
+                    />
+                    <label
+                      class="profile-form-radio-label"
+                      for="profile-radio-male"
+                      >Masculino</label
+                    >
+                    <input
+                      class="profile-form-radio"
+                      type="radio"
+                      name="profile-radio"
+                      id="profile-radio-female"
+                    />
+                    <label
+                      class="profile-form-radio-label"
+                      for="profile-radio-female"
+                      >Femenino</label
+                    >
+                  </div>
+                  <div class="buttons-container">
+                    <input
+                      type="reset"
+                      value="cancel"
+                      class="btn profile-form-cancel"
+                    />
+                    <input
+                      type="button"
+                      value="save"
+                      class="btn profile-form-save"
+                    />
+                  </div>
+                  <p class="save-text">&nbsp;</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script src="../includes/jquery/jquery.js"></script>
+  <script src="../includes/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../js/overlay.js"></script>
+  <script src="../js/profile.js"></script>
+</html>

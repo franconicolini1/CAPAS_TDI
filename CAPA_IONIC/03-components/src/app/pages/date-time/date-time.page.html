@@ -1,0 +1,19 @@
+<app-header title="calendar"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>New This Week</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime
+        [value]="fecha.toISOString()"
+        display-format="DD MM YYYY"
+        min="2019-01-01"
+        max="2022-12-31"
+      ></ion-datetime>
+    </ion-item>
+  </ion-list>
+</ion-content>

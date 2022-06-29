@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../includes/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/overlay.css" />
+    <link rel="stylesheet" href="../css/users.css" />
+    <script
+      src="https://kit.fontawesome.com/56eefb6e22.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nicolini</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <i class="glyphicon glyphicon-align-justify header-nav-icon"></i>
+        <div class="header-nav-container">
+          <img
+            src="../img/user.jpeg"
+            alt="User image"
+            class="header-nav-container-img expand-img"
+          />
+          <p class="user-name">Alexander Pierce</p>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <div class="row">
+        <aside class="col-xs-3 col-sm-2 aside">
+          <div class="row">
+            <div class="col-xs aside-container">
+              <img
+                src="../img/user.jpeg"
+                alt="User image"
+                class="aside-container-img expand-img"
+              />
+              <div class="aside-user-data-container">
+                <p class="user-name aside-user-data-container-text">
+                  Alexander Pierce
+                </p>
+                <p class="aside-user-data-container-status">Online</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <form class="form-group aside-form">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="search"
+                  class="form-control aside-form-input"
+                  placeholder="Search..."
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text"
+                    ><i class="glyphicon glyphicon-search search-icon"></i
+                  ></span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="aside-menu-container">
+            <ul class="aside-menu">
+              <a href="profile.html"
+                ><li class="aside-menu-item">Dashboard</li></a
+              >
+              <a href="users.html"><li class="aside-menu-item">Usuarios</li></a>
+              <a href="paginator.html"
+                ><li class="aside-menu-item">Paginator</li></a
+              >
+              <a href="abmPage.html"
+                ><li class="aside-menu-item">ABM Page</li></a
+              >
+              <a href="index.html"><li class="aside-menu-item">Logout</li></a>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="col-xs-9 col-sm-10 all-container">
+          <div class="table-container">
+            <h1 class="table-title">Usuarios</h1>
+            <table class="table">
+              <thead class="table-head">
+                <tr class="tr">
+                  <th class="th">id</th>
+                  <th class="th">Nombre</th>
+                  <th class="th">Usuario</th>
+                  <th class="th">Email</th>
+                  <th class="th">Direcci&oacute;n</th>
+                  <th class="th">Compa&ntilde;ia</th>
+                  <th class="th">Acciones</th>
+                </tr>
+              </thead>
+              <tbody class="table-body"></tbody>
+            </table>
+          </div>
+
+          <div class="album-container">
+            <h2 class="album-container-title">&Aacute;lbums</h2>
+            <div class="album-items-container">
+              <p class="no-album-text">
+                Seleccione un &Aacute;lbum para ver su contenido
+              </p>
+            </div>
+          </div>
+
+          <div class="img-container">
+            <h2 class="img-container-title">Im&aacute;genes</h2>
+            <div class="img-items-container">
+              <p class="no-img-text">
+                Seleccione un &Aacute;lbum para ver sus im&aacute;genes
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="overlay-container">
+      <img class="overlay-img" src="" alt="overlay img" />
+      <i class="glyphicon glyphicon-plus overlay-icon"></i>
+    </div>
+    <script src="../includes/jquery/jquery.js"></script>
+    <script src="../includes/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/users.js"></script>
+  </body>
+</html>

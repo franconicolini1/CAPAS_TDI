@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="formContent">
+        <h1>Sign In</h1>
+        <div class="user">
+          <img src="./img/user.png" alt="Foto del usuario" />
+        </div>
+
+        <form action="main.html">
+          <label for="login">Login</label> <br />
+          <input
+            class="login"
+            id="login"
+            type="text"
+            placeholder="Nombre de Usuario"
+            required
+          />
+          <br />
+          <!-- Se que esto se hace con css pero por ahora uso br =) -->
+          <label for="password">Password</label> <br />
+          <input
+            id="password"
+            class="password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <br />
+          <input class="sub_btn" type="submit" value="Enviar" />
+        </form>
+        <div class="formFooter">
+          <a href="#">Olvid&oacute; la contrase&ntilde;a?</a>
+          <!-- En href iría el link -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

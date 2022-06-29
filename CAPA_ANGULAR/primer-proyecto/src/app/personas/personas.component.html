@@ -1,0 +1,20 @@
+<app-persona></app-persona>
+<!-- Con los [] se pondra esa propiedad con un atributo de la clase -->
+<button
+  class="btn btn-primary"
+  [disabled]="deshabilitar"
+  (click)="agregarPersona()"
+>
+  Boton
+</button>
+<p>{{ mensaje }}</p>
+<!-- <input type="text" (input)="modificarTitulo($event)" />
+<p>{{ titulo }}</p> -->
+
+<!-- Two way binding, cuando se modifique el input cambia a titulo y si se modifica titulo cambia el input -->
+<input type="text" [(ngModel)]="titulo" />
+<!-- Muestra si ngIf da true, sino se renderizara el #sinPersona  -->
+<p *ngIf="mostrar; else sinPersona">{{ titulo }}</p>
+<ng-template #sinPersona>
+  <p>No hay personas</p>
+</ng-template>

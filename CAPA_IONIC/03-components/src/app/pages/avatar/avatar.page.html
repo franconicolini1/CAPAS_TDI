@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!-- El default es pq si no habia ninguna pagina anterior no se mostraria el -->
+      <!-- boton pq no tiene a donde redirigir. -->
+      <ion-back-button
+        defaultHref="/home"
+        text="Go back"
+        color="primary"
+        mode="ios"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-capitalize">{{ title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-avatar slot="end">
+        <img
+          src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+        />
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of [1,1,1,1,1]">
+      <ion-avatar slot="start">
+        <img
+          src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+        />
+      </ion-avatar>
+      <ion-label> User's photo</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

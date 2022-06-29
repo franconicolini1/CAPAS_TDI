@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Buscar Película </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-toolbar>
+  <ion-searchbar
+    placeholder="Buscar Película"
+    (ionChange)="onSearchChange($event)"
+    debounce="700"
+    [value]="searchText"
+  ></ion-searchbar>
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+  <ion-grid fixed *ngIf="searching">
+    <ion-row>
+      <ion-col class="center">
+        <ion-spinner name="bubbles"></ion-spinner>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list *ngIf="movies.length === 0">
+    <ion-list-header>
+      <ion-label>Ideas</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let idea of ideas" (click)="selectIdea(idea)">
+      <ion-label color="primary">{{ idea }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="6" *ngFor="let movie of movies">
+        <ion-card (click)="showDetails(movie.id)">
+          <img [src]="movie.poster_path | image" alt="Poster's image" />
+          <ion-card-header>
+            <ion-card-subtitle>{{ movie.release_date }}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <h2>{{ movie.title }}</h2>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

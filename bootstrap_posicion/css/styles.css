@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    border: 1px solid #000000;
+}
+
+.green {
+    background-color: #00FF00;
+    height: 50px;
+}
+
+.violet {
+    background-color: #FF00FF;
+    height: 70px;
+}
+
+.light-orange {
+    background-color: #FF9955;
+    height: 150px;
+}
+
+.blue {
+    background-color: #0000FF;
+    height: 110px;
+}
+
+.red {
+    background-color: #FF0000;
+    height: 440px;
+}
+
+@media screen and (max-width: 991px) {
+    .red {
+        height: 810px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .red {
+        display: none;
+    }
+}
